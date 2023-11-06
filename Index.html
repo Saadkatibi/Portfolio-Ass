@@ -21,9 +21,7 @@
                             <li><a href="#Services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#contact">Contact</a></li>
-                            <!-- <i class="fa-solid fa-xmark"></i> -->
                         </ul>
-                        <!-- <i class="fa-solid fa-bars"></i> -->
                     </nav>
                     <div class="header-text">
                         <p>Medical Student</p>
@@ -47,12 +45,12 @@
                         </p> 
                     </div>
                         <div class="tab-titles">
-                            <p class="tab-links skills <!-- active-link -->" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links experience" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links educ" onclick="opentab('education')">Education</p>
+                            <p class="tab-links skills">Skills</p>
+                            <p class="tab-links experience">Experience</p>
+                            <p class="tab-links education">Education</p>
                         </div>   
                     <div class="contents">
-                        <div class="tab-contents skills <!-- active-tab -->" id="skills">
+                        <div class="tab-contents skills" id="skills">
                             <ul>
                                 <li><span>Web development</span><br>Designing Websites</li>
                                 <li><span>Medical Personel</span><br>Assisting in taking care of people</li>
@@ -159,7 +157,6 @@
                 <textarea name="Message" rows="6" placeholder="Your message"></textarea>
                 <button type="Submit" class="btn btn2">Submit</button>
             </form>
-            <!-- <span id="msg"></span> -->
            </div>
         </div>
     </div>
@@ -167,40 +164,4 @@
         <p>copyright <i class="fa-regular fa-copyright"></i> Sa'ad</p>
     </div>
 </div>
-           <!--  <script>
-
-             var tablinks = document.getElementsByClassName("tab-links");
-             var tabcontents = document.getElementsByClassName("tab-contents");
-
-             function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classlist.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classlist.remove("active-tab");
-                }
-                event.currenttarget.classlist.add("active-link")
-                document.getElementById(tabname).classlist.add("active-tab")
-             }
-
-            </script>
-            <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwCEipfkeeADjDZzfr1-L2RH1gtsbR0TPfvmHmSiNAv4uEgtfPS0zRLMFf1pZQH5mSc/exec'
-                const form = document.forms['submit-to-google-sheet']
-                const msg = document.getElementById("msg")
-              
-                form.addEventListener('submit', e => {
-                  e.preventDefault()
-                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => {
-                      msg.innerHTML ="Message sent successfully"
-                      setTimeout(function(){
-                        msg.innerHTML =""
-                      }, 5000);
-                      form.reset()
-                    })
-                    .catch(error => console.error('Error!', error.message))
-                })
-              </script> -->
-         </body>
 </html>
